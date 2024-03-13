@@ -1,33 +1,38 @@
-# Contoh pengimplementasian Fungsi, Argument, dan Parameter
+# Deret Fibonacci
+# def fibonacci(batas):
+#     a, b = 0, 1
 
-# def printHello(word):
-#     print(word)
-    
-# printHello("Hello World!")
+#     print("Deret Fibonacci:")
+#     print(a)
 
-# Contoh pengimplementasian Return Value
+#     while b <= batas:
+#         print(b)
+#         a, b = b, a + b
 
-# def concateStrings(stringOne, stringTwo):
-#     print(stringOne, stringTwo)
+# try:
+#     batas = int(input("Masukkan batas untuk deret Fibonacci: "))
+#     fibonacci(batas)
+# except ValueError:
+#     print("Input harus berupa bilangan bulat.")
 
-# concateStrings("Hello", "World!")
 
-# Contoh pengimplementasian Optional Argument dan Named Argument
+# Rata rata jumlah input dari pengguna
+# total = 0
+# count = 0
 
-# def fahrenheit_to_celsius(fahrenheit):
-#     celsius = (fahrenheit - 32) * 5/9
-#     return celsius
-
-# def main():
-#     fahrenheit = float(input("Masukkan suhu dalam Fahrenheit: "))
-#     celsius = fahrenheit_to_celsius(fahrenheit)
-#     print("Suhu dalam Celsius:", celsius)
-
-# if __name__ == "__main__":
-#     main()
-
-# Contoh pengimplementasian Anonymous Function
-
-# luasPersegi = lambda x: x*x
-# print(luasPersegi(5))
+# while True:
+#     try:
+#         num = float(input("Masukkan angka (masukkan angka negatif atau nol untuk berhenti): "))
+#         if num <= 0:
+#             break
+#         total += num
+#         count += 1
+#     except ValueError:
+#         print("Input harus berupa angka, coba lagi.")
+        
+# if count > 0:
+#     average = total / count
+#     print(f"Rata-rata dari {count} angka yang dimasukkan adalah: {average}")
+# else:
+#     print("Tidak ada angka yang dimasukkan.")
 
